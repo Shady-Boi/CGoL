@@ -23,7 +23,7 @@ void myInit()
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 
-	glOrtho(0.0, CG.getSize(), 0.0, CG.getSize(), 0.1, 5);
+	glOrtho(-CG.getSize() / 2, CG.getSize() / 2, -CG.getSize() / 2, CG.getSize() / 2, 0.1, 5);
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
